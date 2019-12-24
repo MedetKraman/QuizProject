@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace QuizProject.Core.Models {
     public class QuizCreateDTO {
@@ -11,9 +10,16 @@ namespace QuizProject.Core.Models {
 
         public int CommonScore { get; set; }
 
-        public List<(string qst, float qstWgt, List<string> opts, List<(string answer, float answerWgt)> answers)> Questions { get; set; }
+        public List<Question> Questions { get; set; }
 
 
+        public class Question {
+            public string Text { get; set; }
+            public float Weight { get; set; }
+
+            public List<string> Options { get; set; }
+            public List<(string answer, float answerWgt)> Answers { get; set; }
+        }
 
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace QuizProject.Core.Models {
-    public class Quiz {
+    public class QuizView {
 
-        public Quiz(string quizName,
+        public QuizView(string quizName,
                     IEnumerable<Question> questions,
                     Guid? id = null,
                     string? quizDesc = null,
