@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleQuiz.Models.DTOs;
+using System;
 
 namespace SimpleQuiz.Models {
     public sealed class CuratorView {
@@ -17,5 +18,8 @@ namespace SimpleQuiz.Models {
 
         public string FullFIO => FIOModel.FullFIO;
         public string ShortFIO => FIOModel.ShortFIO;
+
+        public static CuratorView From(CuratorDTO dto) => new CuratorView(dto.Id, dto.Lastname, dto.Firstname, dto.Fathername);
+        public CuratorDTO ToDTO() => new CuratorDTO { Id = Id, Lastname = Lastname, Firstname = Firstname, Fathername = Fathername };
     }
 }
