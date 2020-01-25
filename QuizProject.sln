@@ -16,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleQuizTest", "SimpleQui
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleQuiz.Arif", "SimpleQuiz.Arif\SimpleQuiz.Arif.csproj", "{A64A6CED-0499-4F93-982F-507D90E5CE00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizAppArif", "QuizAppArif\QuizAppArif.csproj", "{43B7D480-03A4-4B04-8D7F-F7D385B89D37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp.QTEST", "QuizApp.QTEST\QuizApp.QTEST.csproj", "{736366DA-FE31-4594-9FB1-288E8833DC3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,10 +40,10 @@ Global
 		{A64A6CED-0499-4F93-982F-507D90E5CE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64A6CED-0499-4F93-982F-507D90E5CE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64A6CED-0499-4F93-982F-507D90E5CE00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43B7D480-03A4-4B04-8D7F-F7D385B89D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43B7D480-03A4-4B04-8D7F-F7D385B89D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43B7D480-03A4-4B04-8D7F-F7D385B89D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43B7D480-03A4-4B04-8D7F-F7D385B89D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736366DA-FE31-4594-9FB1-288E8833DC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736366DA-FE31-4594-9FB1-288E8833DC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736366DA-FE31-4594-9FB1-288E8833DC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736366DA-FE31-4594-9FB1-288E8833DC3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
