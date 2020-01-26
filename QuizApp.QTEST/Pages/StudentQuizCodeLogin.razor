@@ -23,7 +23,7 @@
 
     public void Login()
     {
-        NavigationManager.NavigateTo("/student/quiz/index");
+        NavigationManager.NavigateTo($"/student/quiz/index/{Guid.NewGuid()}");
     }
 
 }

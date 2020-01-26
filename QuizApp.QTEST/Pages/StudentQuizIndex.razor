@@ -1,8 +1,20 @@
-﻿@page "/student/quiz/index"
+﻿@page "/student/quiz/index/{quizId:guid}"
+@inject NavigationManager NavigationManager
 
 
-<h3>StudentQuizIndex</h3>
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+        <button class="btn btn-primary" @onclick="StartTest">Начать тестирование</button>
+    </div>
+</div>
 
 @code {
+
+    [Parameter] public Guid QuizId { get; set; }
+
+    void StartTest()
+    {
+        NavigationManager.NavigateTo($"/student/quiz/question/{QuizId}");
+    }
 
 }
