@@ -3,10 +3,16 @@ using System.Collections.Generic;
 
 namespace SimpleQuiz.Models.DTOs {
     public class SimpleQuizCreateDTO {
-        public Guid Id { get; set; }
-        public string Title { get; set; }
-        public string Desc { get; set; }
+        public Guid QuizId { get; set; }
+        public string QuizTitle { get; set; }
+        public string QuizDesc { get; set; }
 
-        public List<(Guid id, string qst, List<string> opts, string answ)> Questions { get; set; }
+        public List<(Guid id, string qst, Dictionary<Guid, string> opts, Guid answ)> QuizQuestions { get; set; }
+
+
+        public Guid CuratorId { get; set; }
+        public string CuratorLastname { get; set; }
+        public string CuratorFirstname { get; set; }
+        public string? CuratorFathername { get; set; }
     }
 }

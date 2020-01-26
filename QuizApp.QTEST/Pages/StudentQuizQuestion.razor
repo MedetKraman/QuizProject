@@ -1,0 +1,29 @@
+﻿@page "/student/quiz/question/{quizId}"
+@layout EmptyLayout
+
+@inject ISimpleQuizService SimpleQuizService
+
+
+<h3>StudentQuizQuestion</h3>
+
+<div class="container">
+    <div class="row rounded shadow-lg p-1">
+        <p class="text-center m-2"></p>
+    </div>
+</div>
+
+
+@code {
+
+    [Parameter] public Guid QuizId { get; set; }
+
+    private SimpleQuizView Quiz { get; set; }
+    private SimpleQuizView.Question CurrentQuestion => Quiz.Questions.First();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Quiz = await SimpleQuizService.GetBy(QuizId).ConfigureAwait(true);
+    }
+
+}

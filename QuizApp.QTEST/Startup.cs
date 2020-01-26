@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using QuizApp.QTEST.Data;
+using SimpleQuiz.Interfaces;
 
 namespace QuizApp.QTEST
 {
@@ -27,7 +28,7 @@ namespace QuizApp.QTEST
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+            services.AddTransient<ISimpleQuizService, DemoSimpleQuizService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

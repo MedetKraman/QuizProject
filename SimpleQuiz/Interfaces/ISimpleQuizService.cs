@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SimpleQuiz.Models;
+using System;
+using System.Threading.Tasks;
 
 namespace SimpleQuiz.Interfaces {
     public interface ISimpleQuizService {
+
+        Task<SimpleQuizView> GetBy(Guid quizId);
+
     }
 }
